@@ -1,9 +1,5 @@
 #include<bits/stdc++.h>
 using namespace std;
-/**
-
-*/
-
 
 template <typename T = int>
 struct ford_fulkerson {
@@ -104,15 +100,5 @@ struct ford_fulkerson {
 
 
 int main () {
-    int n, m;
-    scanf("%d %d", &n, &m);
 
-    ford_fulkerson <int> flow(n + 3);
-    while (m -- ) {
-        int from, to, cap;
-        scanf("%d %d %d", &from, &to, &cap);
-        flow.add_edge(from, to, cap);
-    }
-
-    printf("%d\n", flow.max_flow(1, n));
 }
