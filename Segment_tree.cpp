@@ -2,7 +2,7 @@ struct segtree {
     static const int Mx = 4 * nax;
 
     int sg[Mx] = {}, tag[Mx] = {};
-
+u
 
     inline void pull (int v) {
         sg[v] = max(sg[v * 2], sg[v * 2 + 1]);
